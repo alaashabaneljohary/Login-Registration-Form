@@ -1,0 +1,166 @@
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #eef1f6;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+  .loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #24353f;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.login {
+    background-color: #eef1f6;
+    height: 100vh;
+}
+.bg-img {
+    background: url(../images/img-3.jpg);
+    height: 100vh;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    text-align: left;
+    z-index: 10;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+.bg-img:after {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 276px;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background: url(../images/img-51.png) top left repeat;
+}
+.informeson h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #eef1f6;
+}
+.social-list a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 0 4px 5px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    transition: transform 0.8s , border-radius 0.8s;
+}
+.social-list a:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+.social-list a.facebook-bg {
+    color: #4867aa;
+}
+.social-list a.twitter-bg {
+    color: #33CCFF;
+}
+ .social-list a.google-bg {
+    color: #db4437;
+}
+.social-list a.dribbble-bg {
+    color: #2392e0;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.box-container .form-container 
+{
+    max-width: 450px;
+    width: 100%;
+}
+h1,h2 h3,h4,h5,h6 {
+    font-family: 'Jost', sans-serif;
+}
+p a:hover
+{
+    text-decoration: underline !important;
+}
+input::placeholder
+{
+    color:  rgb(182, 182, 182) !important;
+}
+.navbar
+{
+    background-color: #24353f !important;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+#usernameAlert, #userEmailAlert, #userPasswordAlert
+{
+    font-size: .8rem;
+} 
